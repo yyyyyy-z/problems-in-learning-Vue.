@@ -9,7 +9,7 @@
 #### el-table-column表格字段实现权限控制
 >问题：因为一些需求，有些字段需要隐藏给指定用户  
 >![image](https://github.com/user-attachments/assets/be5c9218-606c-47a4-81b9-a886f9255668)  
-解决方法： 引用$auth（Vue插件提供的全局属性），hasPermi检查用户权限的逻辑实现，它可能从Vuex存储、本地存储、会话存储或后端API中获取用户的权限信息。
+解决方法： 引用$auth（Vue插件提供的全局属性），hasPermi方法检查用户权限的逻辑实现，它可能从Vuex存储、本地存储、会话存储或后端API中获取用户的权限信息。
 ![image](https://github.com/user-attachments/assets/f555c4e8-46a3-4c3c-8a69-dcb35c89f45d)
 ![image](https://github.com/user-attachments/assets/e7d1b9e0-942c-468b-ac2d-014220909386)在没有授权的角色中该字段已隐藏
 
