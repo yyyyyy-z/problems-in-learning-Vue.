@@ -12,4 +12,8 @@
 解决方法： 引用$auth（Vue插件提供的全局属性），hasPermi方法检查用户权限的逻辑实现，它可能从Vuex存储、本地存储、会话存储或后端API中获取用户的权限信息。
 ![image](https://github.com/user-attachments/assets/f555c4e8-46a3-4c3c-8a69-dcb35c89f45d)
 ![image](https://github.com/user-attachments/assets/e7d1b9e0-942c-468b-ac2d-014220909386)在没有授权的角色中该字段已隐藏
-
+#### el-table 表格中多个数组元素用逗号隔开显示  
+>![image](https://github.com/user-attachments/assets/94ba9cef-689c-42ea-9653-89dfd81c614c)  
+scope.row.userName 是该行的 userName 数据。假设 userName 是一个数组，join(",") 会把数组中的所有元素连接成一个字符串，并用逗号 , 分隔开。  
+效果展示  
+![image](https://github.com/user-attachments/assets/1fc88a37-bdee-4621-a0ee-3e44d4ebf0a0)
